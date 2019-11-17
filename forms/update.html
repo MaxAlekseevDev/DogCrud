@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="../controller.php" method="post">
+		<h3>You can only create one hot dog at a time!</h3>
+		What kind you want?<br>
+		<p><input type="radio" name="kind" value="american">American</p>
+		<p><input type="radio" name="kind" value="french">French</p>
+		How many sausages?<br>
+		<p><input type="radio" name="sausages" value="1">1</p>
+		<p><input type="radio" name="sausages" value="2">2</p>
+		What kind of sauce you want?<br>
+		<p><input type="checkbox" name="sauce[]" value="Mayonnaise">Mayonnaise</p>
+		<p><input type="checkbox" name="sauce[]" value="Catchup">Catchup</p>
+		<input type="submit" value="Update" name="update">
+	</form>
+</body>
+</html>

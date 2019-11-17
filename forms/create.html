@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/forms.css">
+</head>
+<body>
+	<form action="../controller.php" method="post">
+		<h3>You can only create one hot dog at a time!</h3>
+		What kind you want?<br>
+		<p><input type="radio" name="kind" value="american" class="radio">American</p>
+		<p><input type="radio" name="kind" value="french" class="radio">French</p>
+		How many sausages?<br>
+		<p><input type="radio" name="sausages" value="1" class="radio">1</p>
+		<p><input type="radio" name="sausages" value="2" class="radio">2</p>
+		What kind of sauce you want?<br>
+		<p><input type="checkbox" name="sauce[]" value="Mayonnaise" class="checkbox">Mayonnaise</p>
+		<p><input type="checkbox" name="sauce[]" value="Catchup" class="checkbox">Catchup</p>
+		<input type="submit" value="Create" name="create" class="btn create">
+	</form>
+</body>
+</html>
